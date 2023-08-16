@@ -1,0 +1,16 @@
+        .jumbotron {
+            color: white;
+            background-color: #38AFE9;
+        }
+        h1 {
+            color: #f7e557;
+        }
+        p {
+            font-size: 20px;
+            width: 500px;
+        }
+        .title {
+            font-size: 70px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="jumbotron text-center">
+        <center>
+            <h1 class="title">Lingogrind</h1>
+            <p>
+            Learning a new language can be a daunting task, and each language presents its own unique challenges. 
+            Lingogrind caters practice tools that enable mastery over specific skills integral to each language. 
+            Pick a language down below to see what skill games are available!
+            </p>
+    </center>
+    </div>
+    <center>
+        {% for dict in langs %}
+            <div class="card" style="width: 18rem; display: inline-block">
+                <img class="card-img-top" src="{{ url_for('static', filename=('images/' ~ dict.flag)) }}" alt="Card image cap">
+                <div class="card-body">
+                    <center><h2>{{ dict.lang }}</h2></center>
+                </div>
+            </div>
+        {% endfor %}
+    </center>
+{% endblock content %}
